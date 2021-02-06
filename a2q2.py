@@ -29,13 +29,26 @@ def findCoordinates(directions):
         # If the d in the input string is S, decrement the value of y with 1
        elif d == 'S':
          y = y - 1
-       else:
-        isInputValid = False
-        print("Invalid input")
-        break
-    if isInputValid:
-      print("     ", "(", x, ',', y, ")")  # prints the x and y coordinates to the console
 
-findCoordinates("EN")
-findCoordinates("ETN")
+    print("     ", "(", x, ',', y, ")")  # prints the x and y coordinates to the console
+
+def processFile(fileName):
+    '''
+    Purpose - This function opens the given file and reads the lines. Processes the directions of each line and closes
+              file
+    Pre Conditions - The file should be in the same folder as the a2q2.py program file
+    Post Conditions - None
+    Return - None
+    '''
+    # Opens the file
+    file = open(fileName)
+
+    lines = file.readlines()
+    print(fileName)
+    for line in lines:
+        findCoordinates(line)
+    # closes the file
+    file.close
+
+processFile("example1.txt")
 
