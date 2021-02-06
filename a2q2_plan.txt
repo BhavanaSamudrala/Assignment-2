@@ -2,3 +2,10 @@ NSID - bhs053
 Student Number - 11258695
 Course Number - CMPT145
 Lecture Section - 04(Arlin)
+
+Phase	
+Requirements	 Day/Time	 Location	Duration	ActualDay/Time Actual Duration
+Design	      	 3Feb/10:30PM	 sask	          40min		  4feb/20min
+Implementation	 4Feb/8:00AM	 sask	          1.5hrs	  4feb/2.5hrs
+Testing/debuggin 4Feb/9:30AM	 sask	          40min	          5feb/30min
+Tidying up	 4Feb/10:10AM	 sask	          20min	          5feb/25min

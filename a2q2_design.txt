@@ -2,3 +2,36 @@ NSID - bhs053
 Student Number - 11258695
 Course Number - CMPT145
 Lecture Section - 04(Arlin)
+
+Design Details
+1.create a function findCoordinates (inputStr)
+    Input: parameter with name inputStr
+    Functionality: prints coordinates to console
+
+ Psedo code:
+    Start Function findCoordinates(inputStr)
+         Coordinate x =0
+         Coordinate y =0
+         Loop through direction in inputStr
+                  if direction is E then increase x
+                  else if  direction is W then decrease x
+                  else if direction is N then increase y
+                  else if  direction is S then decrease y
+         print coordinate x and coordinate y
+
+ test case:
+        start function with inputStr = “EN”
+        x=0,y=0 
+        loop through input string      
+        iteration 1 : direction = E
+          since direction is E => x = 1
+        iteration 2 : direction = N
+         since direction is N => y = 1 
+        output (1,1) to console
+
+2. create a function processFile(fileName)
+	Input: string file Name
+        Functionality : 1.open the file 
+			2. read all the lines in a file and store it in a variable 
+			3. iterate through the Lines and call function findCoordinates with each line as parameter
+
