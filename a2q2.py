@@ -50,5 +50,18 @@ def processFile(fileName):
     # closes the file
     file.close
 
-processFile("example1.txt")
+
+def readFilesAndProcess(fileNames):
+    '''
+    Purpose - iterates through the list of input fileNames(array)
+    Pre Conditions - Assumes the file exists in the directory
+    Post Conditions - None
+    Return - None
+    '''
+    for fileName in fileNames:
+        processFile(fileName)
+
+# calling the funtions
+readFilesAndProcess(['example1.txt','example2.txt','example3.txt'])
+
 
